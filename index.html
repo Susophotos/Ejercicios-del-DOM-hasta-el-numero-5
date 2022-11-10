@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 1 del DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="container-fluid">
+        <nav class="navbar bg-transparent">
+            <div class="container-fluid d-flex flex-nowrap">
+              <a class="navbar-brand"><img class="img-fluid" style="width:6rem" src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/static/twitter-image.png" alt="logo del real madrid"></a>
+              <h1 class="text-center m-0 me-3">Real Madrid</h1>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <h2 class="mt-5 text-center">Ejercicio 1</h2>
+        <div class="container-fluid d-flex flex-column flex-sm-row m-auto justify-content-center align-items-center">            
+            <div class="card m-3 my__card" style="width: 18rem;">
+                <img src="https://estaticos-cdn.sport.es/clip/4988ea2e-e96b-4e67-8f7a-8827123025da_alta-libre-aspect-ratio_default_0.jpg" class="card-img-top img-fluid my__img-card" alt="Imagen de Rodrigo del Real Madrid">
+                <div class="card-body">
+                    <h5 id="tarjeta_h5" class="card-title tarjeta_h5">Jugador Rodrygo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    
+                </div>
+            </div>
+            <div class="card m-3 my__card" style="width: 18rem;">
+                <img src="https://www.realmadrid.com/img/horizontal_940px/alegria-benzema_2rm8523.jpg
+                    " class="card-img-top img-fluid my__img-card" alt="Imagen de Benzema  del Real Madrid">
+                <div class="card-body">
+                    <h5 id="tarjeta_h5" class="card-title tarjeta_h5">Jugador Karim Benzema </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        
+                </div>
+            </div>
+            <div class="card m-3 my__card" style="width: 18rem;">
+                <img src="https://www.realmadrid.com/img/horizontal_940px/__av9178_hor_20200113120046.jpg" class="card-img-top img-fluid my__img-card" alt="Imagen de Valverde del Real Madrid">
+                <div class="card-body">
+                    <h5 id="tarjeta_h5" class="card-title tarjeta_h5">Jugador Valverde </h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>       
+                </div>
+            </div>        
+        </div>
+            <h2 class="mt-5 text-center">Ejercicio 2</h2>
+        <div class="boton1 d-flex justify-content-center">
+            <button type="button" class="btn btn-success my-btn mt-5">Hola</button>
+        </div>
+        <h2 class="mt-5 text-center">Ejercicio 3</h2>
+        <div class="card m-auto my__card2" style="width: 18rem;">
+            <img src="https://img.asmedia.epimg.net/resizer/ezKoeSlljLPkEbuZu8mZHoj3M80=/360x203/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/AFGZ3KAMFBG63EOV63JNSULO4Q.jpg" alt="Imagen de la copa champions">
+            <div class="card-body">
+                <h5 id="tarjeta_h5" class="card-title tarjeta_h5">Champions League </h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="estrellas0  d-flex justify-content-center">
+                        <i id="1estrella"  class="bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                        <i id="2estrella"  class="bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                        <i id="3estrella"  class="bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                        <i id="4estrella"  class="bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                        <i id="5estrella"  class="bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>                                         
+                    </div> 
+                    <div class="boton d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary" onclick="Mensaje()">Calificar</button>                                                
+                    </div>           
+            </div> 
+        
+        
+        
+            <!-- <div class="card m-3" style="width: 18rem;">
+                <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2019/09/laliga-santander.jpg?itok=OGmwkZue" alt="Imagen de liga santander">
+                <div class="card-body">
+                    <h5 id="tarjeta_h5" class="card-title tarjeta_h5">Liga Santander</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="estrellas0  d-flex justify-content-center">
+                            <i id="1estrella1"  class="1estrella bi bi-star-fill m-1 my-star" onclick="calificar2(this)"></i>
+                            <i id="2estrella2"  class="2estrella bi bi-star-fill m-1 my-star" onclick="calificar2(this)"></i>
+                            <i id="3estrella3"  class="3estrella bi bi-star-fill m-1 my-star" onclick="calificar2(this)"></i>
+                            <i id="4estrella4"  class="4estrella bi bi-star-fill m-1 my-star" onclick="calificar2(this)"></i>
+                            <i id="5estrella5"  class="5estrella bi bi-star-fill m-1 my-star" onclick="calificar2(this)"></i>                                         
+                        </div>   
+                        <div class="boton d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary" onclick="Mensaje2()">Calificar</button>                                                
+                        </div>                                                                
+                </div>
+            </div>    
+            <div class="card m-3" style="width: 18rem;">
+                <img src="https://www.estadiolacartuja.es/wp-content/uploads/2022/02/copa-del-rey.jpg" alt="Imagen de copa del rey">
+                <div class="card-body">
+                    <h5 id="tarjeta_h5" class="card-title tarjeta_h5">Copa del Rey</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="estrellas0  d-flex justify-content-center">
+                            <i id=""  class="1estrella bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                            <i id=""  class="2estrella bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                            <i id=""  class="3estrella bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                            <i id=""  class="4estrella bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>
+                            <i id=""  class="5estrella bi bi-star-fill m-1 my-star" onclick="calificar(this)"></i>                                         
+                        </div>                                                        
+                </div>
+            </div>   -->               
+        </div>
+        <h2 class="mt-5 text-center">Ejercicio 4</h2>
+        <div class="container-fluid container__ListaDefensa">
+            <h3 class="m-5 text-center">Defensas del Real Madrid</h3>
+        </div>
+        <h2 class="mt-5 text-center">Ejercicio 5</h2>
+        <div class="containerfluid tituloProductos">
+
+        </div>
+
+
+        
+
+
+    </main>
+    <div class="container-fluid pie_dePagina">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">© 2022 Jesus Escalona, Inc</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+              </ul>
+            </footer>
+          </div>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

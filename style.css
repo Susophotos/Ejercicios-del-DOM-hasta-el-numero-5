@@ -1,0 +1,24 @@
+
+
+.my-star{
+    cursor: pointer;   
+    transition: 0.1s ease-in-out;
+}
+.my-star:hover{
+    color: orange;
+}
+
+.my__card{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    min-height: 15rem;
+    max-height: 15rem;
+    overflow: scroll;
+}
+.my__card2{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+}
+.img_producto{
+    width: 18rem;
+}
+
